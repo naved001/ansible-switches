@@ -112,9 +112,14 @@ interfaces:
     allowlist:
       - "description"
   twentyFiveGigE 1/6/3:
-    description: "U25-S1-P1"
-    allowlist:
-      - "description"
+    description: "U25-S1-P1 OAC Staging 1"
+    state: "up"
+    mtu: 9216
+    portmode: "access"
+    untagged: 214
+    stp:
+      edgeport: true
+      bpduguard: true
   twentyFiveGigE 1/6/4:
     description: "U25-S3-P1 OAC Prod 1"
     state: "up"
@@ -129,9 +134,14 @@ interfaces:
       type: "quad"
       speed: "25G"
   twentyFiveGigE 1/7/1:
-    description: "U27-S1-P1"
-    allowlist:
-      - "description"
+    description: "U27-S1-P1 Staging 2"
+    state: "up"
+    mtu: 9216
+    portmode: "access"
+    untagged: 214
+    stp:
+      edgeport: true
+      bpduguard: true
   twentyFiveGigE 1/7/2:
     description: "U27-S3-P1 OAC Prod 2"
     state: "up"
@@ -142,9 +152,14 @@ interfaces:
       edgeport: true
       bpduguard: true
   twentyFiveGigE 1/7/3:
-    description: "U29-S1-P1"
-    allowlist:
-      - "description"
+    description: "U29-S1-P1 Staging 3"
+    state: "up"
+    mtu: 9216
+    portmode: "access"
+    untagged: 214
+    stp:
+      edgeport: true
+      bpduguard: true
   twentyFiveGigE 1/7/4:
     description: "U29-S3-P1 OAC Prod 3"
     state: "up"
