@@ -365,7 +365,11 @@ interfaces:
     allowlist:
       - "description"
   TenGigabitEthernet 1/28/2:
-    description: "U37-S3B-P2 OAC Infra 3"
+    description: "U37-S3B-P2"
+    allowlist:
+      - "description"
+  TenGigabitEthernet 1/28/3:
+    description: "U37-S3C-P2 OAC Infra 3"
     state: "up"
     mtu: 9216
     portmode: "access"
@@ -373,10 +377,6 @@ interfaces:
     stp:
       edgeport: true
       bpduguard: true
-  TenGigabitEthernet 1/28/3:
-    description: "U37-S3C-P2"
-    allowlist:
-      - "description"
   TenGigabitEthernet 1/28/4:
     description: "U37-S3D-P2"
     allowlist:
