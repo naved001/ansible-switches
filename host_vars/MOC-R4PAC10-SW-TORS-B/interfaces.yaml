@@ -251,20 +251,15 @@ interfaces:
       type: "quad"
       speed: "10G"
   TenGigabitEthernet 1/24/1:
-    description: "U33-S3A-P2 OAC Infra 1"
+    description: "U33-S3A-P2"
+    allowlist:
+      - "description"
+  TenGigabitEthernet 1/24/2:
+    description: "U33-S3B-P2 OAC Infra 1"
     state: "up"
     mtu: 9216
     portmode: "access"
     untagged: 2311
-    stp:
-      edgeport: true
-      bpduguard: true
-  TenGigabitEthernet 1/24/2:
-    description: "U33-S3B-P2 OAC Staging 1"
-    state: "up"
-    mtu: 9216
-    portmode: "access"
-    untagged: 2312
     stp:
       edgeport: true
       bpduguard: true
@@ -301,20 +296,15 @@ interfaces:
       type: "quad"
       speed: "10G"
   TenGigabitEthernet 1/26/1:
-    description: "U35-S3A-P2 OAC Infra 2"
+    description: "U35-S3A-P2"
+    allowlist:
+      - "description"
+  TenGigabitEthernet 1/26/2:
+    description: "U35-S3B-P2 OAC Infra 2"
     state: "up"
     mtu: 9216
     portmode: "access"
     untagged: 2311
-    stp:
-      edgeport: true
-      bpduguard: true
-  TenGigabitEthernet 1/26/2:
-    description: "U35-S3B-P2 OAC Staging 2"
-    state: "up"
-    mtu: 9216
-    portmode: "access"
-    untagged: 2312
     stp:
       edgeport: true
       bpduguard: true
@@ -356,20 +346,15 @@ interfaces:
       type: "quad"
       speed: "10G"
   TenGigabitEthernet 1/28/1:
-    description: "U37-S3A-P2 OAC Infra 3"
+    description: "U37-S3A-P2"
+    allowlist:
+      - "description"
+  TenGigabitEthernet 1/28/2:
+    description: "U37-S3B-P2 OAC Infra 3"
     state: "up"
     mtu: 9216
     portmode: "access"
     untagged: 2311
-    stp:
-      edgeport: true
-      bpduguard: true
-  TenGigabitEthernet 1/28/2:
-    description: "U37-S3B-P2 OAC Staging 3"
-    state: "up"
-    mtu: 9216
-    portmode: "access"
-    untagged: 2312
     stp:
       edgeport: true
       bpduguard: true
