@@ -246,9 +246,14 @@ interfaces:
       type: "quad"
       speed: "10G"
   TenGigabitEthernet 1/23/1:
-    description: "U33-S1A-P1"
-    allowlist:
-      - "description"
+    description: "U33-S1A-P1 OAC Infra 1"
+    state: "up"
+    mtu: 9216
+    portmode: "access"
+    untagged: 213
+    stp:
+      edgeport: true
+      bpduguard: true
   TenGigabitEthernet 1/23/2:
     description: "U33-S1B-P1"
     allowlist:
@@ -270,14 +275,9 @@ interfaces:
     allowlist:
       - "description"
   TenGigabitEthernet 1/24/2:
-    description: "U33-S3B-P1 OAC Infra 1"
-    state: "up"
-    mtu: 9216
-    portmode: "access"
-    untagged: 213
-    stp:
-      edgeport: true
-      bpduguard: true
+    description: "U33-S3B-P1"
+    allowlist:
+      - "description"
   TenGigabitEthernet 1/24/3:
     description: "U33-S3C-P1"
     allowlist:
