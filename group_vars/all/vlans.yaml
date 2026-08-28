@@ -2050,8 +2050,8 @@ vlans:
       - moc
       - mocsecdata
   - id: 2313
-    name: PureStorage-OAC-PROD
-    description: PureStorage OAC 4 10.9.3.0 /24
+    name: PureStorage-OAC-PROD-WORKLOAD0
+    description: PureStorage OAC 4 10.9.8.0 /22
     fabrics:
       - nerc
       - moc
